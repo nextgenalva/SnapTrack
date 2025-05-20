@@ -1,9 +1,12 @@
 import React from 'react'
+import { FaRegHeart } from 'react-icons/fa'
+import { IoMdPerson } from 'react-icons/io'
+import { IoCartOutline } from 'react-icons/io5'
 
 const Navbar = () => {
     return (
         <>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar">
                 <div className="navbar-start">
                     <a className="btn btn-ghost text-xl">SnapTrack</a>
                 </div>
@@ -24,11 +27,15 @@ const Navbar = () => {
                         <input type="search" className="grow" placeholder="Search" />
                     </label>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Login</a>
+                <div className="navbar-end flex gap-3">
+                    <a className=""><IoMdPerson size={24} />
+                    </a>
+                    <a className=""><FaRegHeart size={24} />
+                    </a>
+                    <a className=""><IoCartOutline size={24} />
+                    </a>
                 </div>
             </div>
-
         </>
     )
 }
