@@ -1,11 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const NavCategories = () => {
 
     const links = <>
 
 
-        <li><a>Item 1</a></li>
+        <li>
+            <Link to="/all-products">
+                All Products
+            </Link>
+        </li>
         <li >
             <details>
                 <summary>Parent</summary>
